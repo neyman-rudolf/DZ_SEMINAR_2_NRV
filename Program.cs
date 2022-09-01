@@ -20,10 +20,28 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
-string? number = Console.ReadLine();
+// string? number = Console.ReadLine();
 
-int size = number.Length;
+// int size = number.Length;
 
-if (number.Length < 3 ) Console.WriteLine("Нет третьего числа");
+// if (number.Length < 3 ) Console.WriteLine("Нет третьего числа");
 
-else Console.WriteLine(number [2]);
+// else Console.WriteLine(number [2]);
+
+// Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+
+// 6 -> да
+// 7 -> да
+// 1 -> нет
+
+Console.Write("Введите число от 1 до 7: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+if ( number > 5 && number < 8) 
+
+{
+    Console.WriteLine("ДА");
+}
+
+
+else Console.WriteLine("НЕТ");
